@@ -18,7 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NgxGraphModule,
     FormsModule,
     MatSlideToggleModule,
-    BrowserAnimationsModule,   
+    BrowserAnimationsModule,  
   ],
   providers: [],
   bootstrap: [AppComponent]

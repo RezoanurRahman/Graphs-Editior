@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { Edge, Node } from '@swimlane/ngx-graph';
 import { nodesfromdata, linksfromdata } from './data.service'
 import { Subject } from 'rxjs';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -31,15 +30,19 @@ export class AppComponent {
   }
   //Triggers when adding a new edge between the nodes
   onClickMeaddEdge() {
-    
-    let link: Edge = { source: this.fromComponentNewNodeForEdge, target: this.toComponentNewNodeForEdge };
-    this.links.push(link);
-    //pusing the event
-    this.update$.next(true);
+    if (this.fromComponentNewNodeForEdge != "" && this.fromComponentNewNodeForEdge != null && this.toComponentNewNodeForEdge != "" && this.toComponentNewNodeForEdge != null ) {
+      let link: Edge = { source: this.fromComponentNewNodeForEdge, target: this.toComponentNewNodeForEdge };
+      this.links.push(link);
+      //pusing the event
+      this.update$.next(true);
+    }
+    else {
+      alert("Please input a value!");
+    }
   }
+ 
   //Triggers when hiding the node numbers 
   onClickMeHideTheNodeid() {
-    
     //Conditions to switch between showing and hiding
     if (this.buttonState == true) {
       for (var i = 0; i < this.nodeIdElement.length; i++) {
@@ -52,6 +55,7 @@ export class AppComponent {
       }
     }
   }
+
 }
 
 
