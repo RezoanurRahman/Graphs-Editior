@@ -9,6 +9,7 @@ import { Subject } from 'rxjs';
 })
 
 export class AppComponent {
+
   //Required Attributes for the Graph
   autoCenter = false;
   layout = "d3ForceDirected";
@@ -21,6 +22,7 @@ export class AppComponent {
   toComponentNewNodeForEdge: string;
   buttonState = true;
   nodeIdElement = document.getElementsByClassName("nodeName");
+
   //Triggers when add new node button is pressed
   onClickMenode() {
     let data: Node = { id: String(this.nodes.length + 1), label: 'newnode' };
@@ -28,6 +30,7 @@ export class AppComponent {
     //pusing the event
     this.update$.next(true);
   }
+
   //Triggers when adding a new edge between the nodes
   onClickMeaddEdge() {
     if (this.fromComponentNewNodeForEdge != "" && this.fromComponentNewNodeForEdge != null && this.toComponentNewNodeForEdge != "" && this.toComponentNewNodeForEdge != null ) {
@@ -40,7 +43,7 @@ export class AppComponent {
       alert("Please input a value!");
     }
   }
- 
+  
   //Triggers when hiding the node numbers 
   onClickMeHideTheNodeid() {
     //Conditions to switch between showing and hiding
