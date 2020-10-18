@@ -6,7 +6,7 @@ A small video demo is availavle [here](https://drive.google.com/file/d/1USKVaR0S
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+First Run `npm install` to automatically install all the required modules. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
