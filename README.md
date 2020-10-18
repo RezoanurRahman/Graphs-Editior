@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
 
-Video Demo Is availavle at `https://drive.google.com/file/d/1USKVaR0SuCoJNuLd5-Axi9nxOdmyvhzB/view?usp=sharing`
+Video Demo Is availavle [here](https://drive.google.com/file/d/1USKVaR0SuCoJNuLd5-Axi9nxOdmyvhzB/view?usp=sharing)
 
 ## Development server
 
