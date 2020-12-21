@@ -1,4 +1,15 @@
 # GraphEditor
+Creates nodes by an "add" button
+   - Each node is displayed by a green circle with a black border
+   - Each node can be freely movable via drag&drop
+   - Each node has have a number. The number of a node should is
+displayed at its center, one central control button should toggle the
+display of all numbers
+   - Two text boxes (one for each node number) and a button serves
+the purpose of adding edges. Each Edge is displayed by a blue line
+
+Framework used: 
+NGX-Graph 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
 
